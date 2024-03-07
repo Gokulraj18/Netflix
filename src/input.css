@@ -1,0 +1,77 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.img-container{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+}
+.color-black{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+.header{
+    @apply relative flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+.logo img{
+    @apply relative w-[200px] min-h-full;
+}
+.nav ul {
+    @apply relative w-[140px] flex justify-between items-center text-white;
+}
+.btn{
+    @apply relative bg-red-600 p-2 rounded-sm;
+}
+.dropdownbtn{
+    @apply relative bg-neutral-400 text-black px-2 rounded-sm;
+}
+.main{
+    @apply relative flex flex-col justify-center items-center h-lvh;
+}
+.head-content p{
+    font-weight: 900;
+    @apply relative text-white text-8xl text-center;
+}
+.main .sub{
+    @apply relative text-white text-4xl;
+}
+.main .cap{
+    @apply relative text-white text-2xl;
+}
+.inputs{
+    @apply flex justify-center items-center text-2xl gap-4 mt-5;
+}
+input{
+    @apply relative bg-transparent border border-neutral-400 pr-20 pl-2 py-5 rounded-sm;
+}
+.inputs button{
+    @apply relative text-white bg-red-600 px-7 py-6 text-2xl font-bold rounded-sm;
+}
+.plans{
+    @apply relative bg-[rgb(15,23,49)] text-white pb-20;
+}
+.above-plan{
+    @apply bg-[rgb(15,23,49)] text-white text-5xl font-extrabold pt-10 pl-5 pb-10;
+}
+.main-con{
+    @apply w-full flex justify-center items-center gap-8;
+}
+.con{
+    @apply w-[200px] flex flex-col justify-between items-center bg-[rgb(75,29,66)] py-20 px-7 rounded-lg text-3xl text-center hover:bg-[rgb(118,36,101)] transition-all duration-600; 
+}
+.con .plan{
+    @apply text-4xl font-medium;
+}
